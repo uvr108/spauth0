@@ -12,7 +12,7 @@ import { AsyncPipe, DOCUMENT, NgIf } from '@angular/common';
       </button>
     </ng-container>
     <ul *ngIf="auth.user$ | async as user">
-      <li>{{ user.name }}</li>
+      <li>{{ user.nickname }}</li>
       <li>{{ user.email }}</li>
     </ul>
     <ng-template #loggedOut>
